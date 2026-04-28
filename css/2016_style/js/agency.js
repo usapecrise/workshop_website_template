@@ -8,7 +8,7 @@
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top',
-    offset: 120   // 👈 THIS IS THE FIX
+    offset: 120
 });
 
 // Closes the Responsive Menu on Menu Item Click
