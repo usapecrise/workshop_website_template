@@ -1,0 +1,45 @@
+<section id="speakers" style="background:#f5f7fb; padding:80px 0;">
+  <div class="container">
+
+    <!-- TITLE -->
+    <div class="text-center">
+      <h2 class="section-heading">Speakers</h2>
+    </div>
+
+    <!-- LIST -->
+    <div class="speaker-list">
+
+{% for post in site.data.twenty_17.speakers %}
+
+      <div class="speaker-row">
+
+        <!-- PHOTO -->
+        <div class="speaker-photo">
+          <img class="speaker-img {{ post.image_class }}"
+     src="{% if post.image %}{{ post.image | prepend: site.baseurl }}{% else %}{{ '/css/2016_style/img/default-image.jpg' | prepend: site.baseurl }}{% endif %}"
+     alt="{{ post.title }}">
+        </div>
+
+        <!-- CONTENT -->
+        <div class="speaker-content">
+          <h4 class="speaker-name">{{ post.title }}</h4>
+
+          <p class="speaker-oneliner">
+            {{ post.oneliner }}
+          </p>
+
+          <div class="speaker-full">
+            <p>{{ post.bio }}</p>
+          </div>
+
+          <div class="speaker-toggle">View full bio →</div>
+        </div>
+
+      </div>
+
+{% endfor %}
+
+    </div>
+
+  </div>
+</section>

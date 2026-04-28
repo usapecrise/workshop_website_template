@@ -1,0 +1,22 @@
+title: APEC Digital Trade Policy Dialogue
+description: >
+  High-level dialogue on digital trade across APEC economies
+
+baseurl: "/digital-trade-policy-dialogue"
+url: "https://usapecrise.github.io"
+
+markdown: kramdown
+
+logo: "/css/2016_style/img/icon-large.png"
+
+social: []
+
+google_site_verification: googleXXXXXXXXXXXXXXXX.html
+
+include: ['_2016_pages', '_2017_pages']
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+permalink: pretty
